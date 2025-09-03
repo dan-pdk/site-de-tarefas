@@ -1,0 +1,40 @@
+/*
+ Conduta geral para organização CSS (LEIA!)
+  -- Um arquivo por página HTML
+
+  -- Evitar usar classes onde IDs podem ser usados (um elemento apenas). Entenderemos que classes serão para múltiplos elementos, não um só
+
+  -- Quando for selecionar um elemento, de preferência, coloque o caminho de pelo menos três gerações antes, e não uma classe ou id individual
+    Ex.: header > nav > #button-2 { ✅        o que NÃO fazer:  .button 2 {
+
+  -- Quando nomear variáveis, deixe bem óbvio o que elas são
+    Ex.: --mainBackgroundColor: blue; ✅      --color1: blue ❌
+
+  -- Tente separar propriedades por categorias:
+    (setas não são necessárias)
+    header {
+    width: 100vw;  <-- dimensões
+    height: 50px;
+                   <-- espaço para separar
+    background-color: white;        <-- cor e estilo
+    box-shadow: 1px 1px 1px 2px black;
+    border: 2px solid gray;
+
+    margin: 2px;  <-- posição e margens
+    top: 5px;
+    padding: 10px
+
+    display: flex;  <-- alinhamento
+    flex-direction: column;
+    align-items: center;
+    }
+    -- Tente colocar as propriedades na ordem que os elementos aparecem no HTML
+<-- esconda o comentário nessa barra do lado após ler. Sinta-se á vontade para apagar. Só coloquei isso pra que todos nós estivéssemos programando do mesmo jeito. */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
